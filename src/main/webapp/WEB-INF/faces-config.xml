@@ -3,19 +3,9 @@
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
                                   https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd">
-    <!--managed-bean>
+    <managed-bean>
         <managed-bean-name>Controller</managed-bean-name>
-        <managed-bean-class>org.example.crud_jsf_jpa.Controller.StudentController</managed-bean-class>
+        <managed-bean-class>com.example.controle1.Controller.AppController</managed-bean-class>
         <managed-bean-scope>request</managed-bean-scope>
-        <managed-property>
-            <property-name>etudiant</property-name>
-            <property-class>org.example.crud_jsf_jpa.Model.Student</property-class>
-            <value>#{studentBean}</value>
-        </managed-property>
-        <managed-property>
-            <property-name>etudiant_to_update</property-name>
-            <property-class>org.example.crud_jsf_jpa.Model.Student</property-class>
-            <value>#{studentUpdate}</value>
-        </managed-property>
-    </managed-bean-->
+    </managed-bean>
 </faces-config>
