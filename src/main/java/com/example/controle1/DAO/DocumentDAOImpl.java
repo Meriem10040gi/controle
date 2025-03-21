@@ -1,6 +1,7 @@
 package com.example.controle1.DAO;
 
 import com.example.controle1.Model.Book;
+import com.example.controle1.Model.Document;
 import com.example.controle1.Model.Magazine;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -37,6 +38,17 @@ public class DocumentDAOImpl implements DocumentDAOI{
         }
     }
 
+    @Override
+    public Document getDocumentById(int id) {
+        EntityManager em = null;
+        try {
+            em = emf.createEntityManager();
+            return em.find(Document.class,id);
+        }
+        finally {
+            if(em!=null) em.close();
+        }
+    }
 
 
 }

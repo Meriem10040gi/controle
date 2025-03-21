@@ -13,7 +13,7 @@ public class AppController {
     List<Magazine>getMagazines(){
         return doc.getAllMagazines();
     }
-    List<Magazine>getBooks(){
+    List<Book>getBooks(){
         return doc.getAllBooks();
     }
     List<Borrow>  getBorrows(){
